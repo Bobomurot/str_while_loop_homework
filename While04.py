@@ -6,4 +6,10 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    count = 0
+    n = 0
+    while n < len(s):
+        if s[n].isupper():
+            count += 1
+        n += 1
+    return count

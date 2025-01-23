@@ -6,4 +6,10 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    count = 0
+    n = len(s)
+    while n < len(s):
+        if s[n].isalpha():
+            count += 1
+        n += 1
+    return count

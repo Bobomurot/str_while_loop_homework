@@ -7,3 +7,10 @@ def main(s):
     Returns:
         int: return answer
     """
+    count = 0
+    n = 0
+    while n < len(s):
+        if s[n].isalpha() and s[n].lower() not in "aeiou":
+            count += 1
+        n += 1
+    return count
